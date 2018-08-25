@@ -26,6 +26,7 @@ public class GPSModule extends Activity {
         init(new LocationListener() {
             @Override
             public void onLocationChanged(Location location) {
+                //Display Onchanged
                 Toast.makeText(context, location.getProvider(),Toast.LENGTH_LONG).show();
                 Log.e("Longi", String.valueOf(location.getLongitude()));
                 Log.e("Lati", String.valueOf(location.getLatitude()));
